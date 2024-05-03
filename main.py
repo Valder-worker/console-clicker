@@ -1,11 +1,14 @@
-#pip install keyboard
-#pip install mouse
+# pip install keyboard
+# pip install mouse
 
 import time
 import keyboard
 import mouse
+
 print('Запуск и остановка клавишами ALT + Z')
 ch = False
+
+
 def check():
     global ch
     if ch:
@@ -14,6 +17,7 @@ def check():
     else:
         ch = True
         print('Включен')
+
 
 keyboard.add_hotkey('ALT + Z', check)
 
